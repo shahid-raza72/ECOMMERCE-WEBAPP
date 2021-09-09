@@ -1,4 +1,4 @@
-const  asyncHandler = reuqire('express-async-handler')
+const  asyncHandler = require('express-async-handler')
 const generateToken= require('../utils/generateToken.js')
 const  User = require('../models/userModel.js')
 

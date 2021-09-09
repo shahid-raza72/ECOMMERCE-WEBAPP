@@ -9,7 +9,7 @@ const {
   deleteUser,
   getUserById,
   updateUser,
-}= reuqire('../controllers/userController.js')
+}= require('../controllers/userController.js')
 const { protect, admin } = require('../middleware/authMiddleware.js')
 
 router.route('/').post(registerUser).get(protect, admin, getUsers)
